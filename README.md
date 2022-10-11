@@ -1,6 +1,7 @@
 # zakupkiHack
 Данный репозиторий появился после участия в zakupkiHack2.0 
 Для запуска проекта требуется загрузить модели:
+  
   dictionary - https://drive.google.com/file/d/1-mBUITUW7q6Ttwo9RmDlZyFahj6WdrlQ/view?usp=sharing
   index - https://drive.google.com/file/d/1Q3Y1tiAbtgKrYriK3IEgcE8uBk134r9O/view?usp=sharing
   tfidf - https://drive.google.com/file/d/1sACIBhThNVnn97LPxW9eUtLk6qhIwOtk/view?usp=sharing
