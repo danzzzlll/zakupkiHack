@@ -20,6 +20,18 @@ full.fillna('', inplace=True)
 full['name_char_okpd'] = full['product_name'] + ' ' + full['product_characteristics'] + ' ' + full['okpd2_name']
 full['name_char_okpd'] = full['name_char_okpd'].apply(lambda x: list(x.split()))
 
+#dictionary = corpora.Dictionary(full_table['name_char_okpd'])
+#feature_cnt = len(dictionary.token2id)
+#corpus = [dictionary.doc2bow(text) for text in full_table['name_char_okpd']]
+#tfidf = models.TfidfModel(corpus)
+#index = similarities.SparseMatrixSimilarity(tfidf[corpus], num_features = feature_cnt)
+#
+#with open('index.pickle', 'wb') as f: 
+#    pickle.dump(index, f)
+#with open('dictionary.pickle', 'wb') as g: 
+#    pickle.dump(dictionary, g)
+#with open('tfidf.pickle', 'wb') as h: 
+#    pickle.dump(tfidf, h)
 
 with open('index.pickle', 'rb') as f:
     index = pickle.load(f)
